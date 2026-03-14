@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda TechStore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TechStore</div>
+
+<div class="busqueda">
+<input id="buscar" placeholder="Buscar producto">
+<button onclick="buscarProducto()">Buscar</button>
+</div>
+
+<div>
+<button onclick="logout()">Cerrar sesión</button>
+<span class="carrito" onclick="toggleCarrito()">🛒 <span id="contador">0</span></span>
+</div>
+
+</header>
+
+<div class="carritoPanel" id="panelCarrito">
+
+<table id="tablaCarrito"></table>
+
+<button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+</div>
+
+<div class="container">
+
+<div class="grid" id="listaProductos"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
