@@ -20,7 +20,7 @@ localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
 alert("Usuario creado")
 
-window.location="login.html"
+window.location="index.html"
 
 }
 
@@ -51,7 +51,7 @@ function logout(){
 
 localStorage.removeItem("sesion")
 
-window.location="login.html"
+window.location="index.html"
 
 }
 
